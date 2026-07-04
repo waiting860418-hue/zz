@@ -38,6 +38,23 @@ h1{margin:8px 0 4px;color:var(--purple);font-size:clamp(38px,10vw,64px)}
 #resultText{margin:18px 0;font-size:27px;line-height:1.75;font-weight:1000}.actions{display:grid;gap:13px}
 .action{min-height:64px;border-radius:22px;font-size:23px;font-weight:1000;background:#e0f2fe;color:#075985}.primary{background:var(--purple);color:white}.secondary{background:var(--yellow);color:#713f12}.hidden{display:none!important}
 @media (min-width:640px){.actions{grid-template-columns:1fr 1fr 1fr}}
+
+/* v1.2：選項統一黃色 */
+.choice:nth-child(1),
+.choice:nth-child(2),
+.choice:nth-child(3),
+.choice:nth-child(4){
+  background:#fff3bf !important;
+}
+.choice.correct{
+  background:#b2f2bb !important;
+  border-color:#16a34a !important;
+}
+.choice.wrong{
+  background:#ffc9c9 !important;
+  border-color:#dc2626 !important;
+}
+
 </style>
 </head>
 <body>
